@@ -1,0 +1,83 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>js</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link  rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: aqua;
+        }
+        .outer{
+            text-align: center;
+            margin-top: 30px;
+            color:crimson;
+            padding-bottom: 25px;
+            position: relative;
+        }
+        .btn1{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            box-shadow: 3px 3px 4px gray;
+            background-image: repeating-radial-gradient(darkmagenta 10%,indigo 20%,lightcoral 30%,springgreen 40%);
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            border: 0;
+        }
+        btn1:hover{
+            box-shadow: 6px 6px 8px black;
+        }
+        .btn2{
+            height: 350px;
+            width: 350px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background-color: blueviolet;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: conic-gradient(red 0deg,red 45deg,green 45deg,green 90deg,
+            yellow 90deg, yellow 135deg,blue 135deg, blue 180deg,aqua 180deg,aqua 225deg,
+            violet 225deg,violet 270deg,darkSalmon 270deg,darkSalmon 315deg,deeppink 315deg,
+            deeppink 360deg,fuchsia 360deg,fuchsia 0deg);
+        }
+        .text{
+            margin-top: -380px;
+            margin-left: 25px;
+            color:darkmagenta;
+        }
+        </style>
+  </head>
+  <body>
+    <div class="outer">
+    <h1>PLAY THE WHEEL ROTATE GAME</h1>
+    <h3>click on the inner spiral button to start game</h3>
+        <div class="btn2" id="outer">
+        <button class="btn1" id="inner" onclick=""></button>
+        </div>
+</div>
+<div class="text">
+    <h2>Points of each color appearing at top</h2>
+    <p> Red :&nbsp; 10 points</p>
+    <p>Green :&nbsp; 15 points</p>
+    <p>Yellow :&nbsp; 20 points</p>
+    <p>Blue :&nbsp; 25 points</p>
+    <p>Aqua :&nbsp; 30 points</p>
+    <p>Violet :&nbsp; 35 points</p>
+    <p>DarkSalmon :&nbsp; 40 points</p>
+    <p>DeepPink :&nbsp; 45 points</p>
+    <p>Fuchsia :&nbsp; 50 points</p>
+
+</div>
+  <script src="js/wheel.js"></script>
+  </body>
+</html>
